@@ -2,7 +2,7 @@
 
 DOM Challenge II for the TTP Program
 
-A collaborative HTML and Javascript project. 
+A collaborative HTML, CSS, and Javascript project. 
 
 HTML page with two buttons - Jason Charles
 

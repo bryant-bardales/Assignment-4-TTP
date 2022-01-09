@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>DOM Challenge II: Part 3</title>
+    <link rel="stylesheet" href="part3.css"/>
+  </head>
+
+  <body>
+    <header class="linksection"> <!--Start of CSS "linksection" class-->
+
+        <p><a href="index.html" >DOM Challenge II: Part 1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="part2.html" >DOM Challenge II: Part 2</a> </p>
+                                            <!--"&nbsp;" adds space between characters in HTML-->
+    </header> <!--End of CSS "linksection" class-->
+
+    <div id="container">
+
+      <div class="whole-form">
+        <h1>Sign In Form</h1>
+
+        <form>
+          <div class="fill-section">
+            <label for="username">Username:</label>
+            <input type="username" name="username" id="username" placeholder="Enter a username"/>
+          </div>
+
+          <div class="fill-section">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter an email"/>
+          </div>
+
+          <div class="fill-section">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter the password"/>
+            <span id="wrong-password"></span>
+          </div>
+          
+          <button type="button" class="btn">SIGN IN</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <script src="part3.js"></script>
+
+  </body>
+
+</html>

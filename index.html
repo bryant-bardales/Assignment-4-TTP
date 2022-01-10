@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-   <head>
-      <meta charset="UTF-8">
+    <head>
+      <meta charset="UTF-8"> 
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>DOM Challenge: Part 1</title>
       <link type="text/css" rel="stylesheet" href="index.css"/>
-      <script type="text/javascript">
+      <body>
+        <p></p>
+        <a class="Second_Page" href="part2.html">Link to DOM Challenge: Part 2</a>
+        <p></p>
+        <a class="Third_Page" href="part3.html">Link to DOM Challenge: Part 3</a>
+          <div class="buttons">
+            <div class="button1">
+              <p id="argOne"></p>
+                <button onclick="firstButton()" class="button1"><img src="./../Button1.png" alt="button1-img"></button>
+            </div>
+            <div class="button2">
+              <p id="argTwo"></p>
+                <button onclick="secondButton()" class="button2"><img src="./../Button2.png" alt="button2-img"></button>
+            </div>
+          </div>
+      </body>
+    </head>
+      
+      <script type="text/javascript"> // goal is to replace the same text with a different text when each button is clicked
         function firstButton(){
           var argumentTwo = document.getElementById("argTwo")
-          argumentTwo.textContent = "I'm right"
+          argumentTwo.textContent = "I'm right" 
         }
 
-        function secondButton(){
+        function secondButton(){ 
           var argumentTwo = document.getElementById("argTwo")
           argumentTwo.textContent = "No, I'm right!" 
         }
       </script>
-
-      <head>
-        <body>
-          <p></p>
-          <a class="Second_Page" href="part2.html">Link to DOM Challenge: Part 2</a>
-          <p></p>
-          <a class="Third_Page" href="part3.html">Link to DOM Challenge: Part 3</a>
-            <div class="buttons">
-              <div class="button1">
-                <p id="argOne"></p>
-                  <button onclick="firstButton()" class="button1"><img src="./../Button1.png" alt="button1-img"></button>
-              </div>
-              <div class="button2">
-                  <p id="argTwo"></p>
-                    <button onclick="secondButton()" class="button2"><img src="./../Button2.png" alt="button2-img"></button>
-              </div>
-            </div>
-        </body>
-      </head>
 </html>
